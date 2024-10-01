@@ -69,6 +69,3 @@ The application logs the status of each email (success or failure) to the consol
 1. **Authentication Issues**: Ensure you have created a Gmail app-specific password. Visit [Gmail App Passwords](https://myaccount.google.com/apppasswords) for more information.
 2. **Sending Limits**: Gmail has a daily sending limit. Make sure your usage stays within Gmail's free quota to avoid email delivery failures.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
