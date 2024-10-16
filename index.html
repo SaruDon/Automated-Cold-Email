@@ -77,7 +77,7 @@
       }
 
       .content {
-        background-color: #bb87fb;
+        background-color: #f1eafa;
         padding: 5px;
         border-radius: 5px;
         margin-top: 30px;
@@ -141,6 +141,10 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      
+      .para{
+        padding-top:5px;
+      }
     </style>
   </head>
   <body>
@@ -168,15 +172,15 @@
 
       <!-- Main Content -->
       <div class="content">
-        <p>Dear [HR Manager’s Name],</p>
-        <p>I hope this email finds you well.</p>
-        <p>
+        <p class='para'>Dear ${person.name},</p>
+        <p class='para'>I hope this email finds you well.</p>
+        <p class='para'>
           My name is Sarvesh Khamkar, and I am writing to express my interest in
-          the [Position Name] at XYZ Company, which I came across on LinkedIn. I
+          the ${position} at ${person.comapny}, which I came across on LinkedIn. I
           believe my technical skills and passion align perfectly with your
           team’s mission.
         </p>
-        <p>
+        <p class='para'>
           I am highly skilled in Java, SpringBoot, JavaScript, Node.js and have
           a strong foundation in data structures and algorithms. During my time
           at Code-B on the <a href="https://mple.ai/">mple.ai</a> AI Training
@@ -188,7 +192,7 @@
         <!-- Numbered List -->
         <table class="numbered-list" cellpadding="0" cellspacing="0">
           <tr>
-            <td>1</td>
+            <td style ="background-color:  #4a148c;">1</td>
             <td>
               <strong>Automated interview email system:</strong> Created an
               automated email system using Node.js, MongoDB, and Nodemailer.
@@ -197,7 +201,7 @@
             </td>
           </tr>
           <tr>
-            <td>2</td>
+            <td style ="background-color: #4a148c;">2</td>
             <td>
               <strong>Dynamic interview generation:</strong> Contributed to the
               Automated Interview Generation team. Developed an AI-driven
@@ -207,7 +211,7 @@
             </td>
           </tr>
           <tr>
-            <td>3</td>
+            <td style ="background-color: #4a148c;">3</td>
             <td>
               <strong>Access control via AuthGuard:</strong> Implemented
               restrictions on candidate result access within the organization to
@@ -215,7 +219,7 @@
             </td>
           </tr>
           <tr>
-            <td>4</td>
+            <td style ="background-color: #4a148c;">4</td>
             <td>
               <strong>Talent pool filters and dynamic flow diagrams:</strong>
               Developed a candidate filtering system for the job pool, utilizing
@@ -225,7 +229,7 @@
             </td>
           </tr>
           <tr>
-            <td>5</td>
+            <td style ="background-color: #4a148c;">5</td>
             <td>
               <strong>Landing page optimization:</strong> Created a
               user-friendly landing page in Svelte, increasing web traffic by
@@ -233,7 +237,7 @@
             </td>
           </tr>
           <tr>
-            <td>6</td>
+            <td style ="background-color: #4a148c;">6</td>
             <td>
               <strong>Daily Bug solving:</strong> Worked with a software tester
               to resolve bugs on a daily basis.
@@ -241,20 +245,20 @@
           </tr>
         </table>
 
-        <p>
+        <p class='para'>
           I have attached my resume for your review and provided links to my
           LinkedIn and GitHub profiles below. I would be thrilled to bring my
-          skills and experience to [company] and discuss how I can
+          skills and experience to ${person.comapny} and discuss how I can
           contribute to the team. Thank you for considering my application.
         </p>
         <div class="signature">
-          Best regards,<br /><br />
-          Sarvesh Khamkar,<br />
-          <a href="mailto:sarveshkhamkar321@gmail.com"
-            >sarveshkhamkar321@gmail.com</a
-          ><br />
-          <a href="tel:+9321555257">9321555257</a>
-        </div>
+        Best regards,<br />
+        Sarvesh Khamkar,<br />
+        <a href="mailto:sarveshkhamkar321@gmail.com"
+          >sarveshkhamkar321@gmail.com</a
+        ><br />
+        <a href="tel:+9321555257">9321555257</a>
+      </div>
       </div>
 
       <!-- Signature -->
